@@ -35,9 +35,9 @@
             <td>Gender</td>
             <td>:</td>
             <td>
-              <select class="select-form" name="gender">
-                <option>Female</option>
-                <option>Male</option>
+              <select class="select-form" name="gender" id="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
               </select>
             </td>
           </tr>           
@@ -54,47 +54,47 @@
           <tr>
             <td>Username</td>
             <td>:</td>
-            <td><input type="text" name="username" class="input-form" required/></td>
+            <td><input type="text" name="username" class="input-form" id="username" required/></td>
           </tr>
           <tr>
             <td>Email Address</td>
             <td>:</td>
-            <td><input type="email" name="email" class="input-form" required/></td>
+            <td><input type="email" name="email" class="input-form" id="email" required/></td>
           </tr>
           <tr>
             <td>Phone Number</td>
             <td>:</td>
-            <td><input type="text" name="phone" class="input-form" required/></td>
+            <td><input type="text" name="phone" class="input-form" id="phone" required/></td>
           </tr>
           <tr>
             <td>Password</td>
             <td>:</td>
-            <td><input type="password" name="password" class="input-form" required/></td>
+            <td><input type="password" name="password" class="input-form" id="password" required/></td>
           </tr> 
           <tr>
             <td>Confirm Password</td>
             <td>:</td>
-            <td><input type="password" name="cpassword" class="input-form" required/></td>
+            <td><input type="password" name="cpassword" class="input-form" id="cpassword" required/></td>
           </tr>          
           <tr>
             <td>Address</td>
             <td>:</td>
-            <td><textarea name="address" class="input-form" required></textarea></td>
+            <td><textarea name="address" class="input-form" id="address" required></textarea></td>
           </tr>    
           <tr>
             <td>Suburb</td>
             <td>:</td>
-            <td><input type="text" name="suburb" class="input-form" required/></td>
+            <td><input type="text" name="suburb" class="input-form" id="suburb" required/></td>
           </tr> 
           <tr>
             <td>State</td>
             <td>:</td>
-            <td><input type="text" name="state" class="input-form" required/></td>
+            <td><input type="text" name="state" class="input-form" id="state" required/></td>
           </tr>
           <tr>
             <td>Postcode</td>
             <td>:</td>
-            <td><input type="text" name="postcode" class="input-form" required/></td>
+            <td><input type="text" name="postcode" class="input-form" id="postcode" required/></td>
           </tr>                                                                                              
         </table>
         <input type="submit" value="Submit Data" class="button-form" id="submit-button" />
@@ -114,9 +114,27 @@
 <script>
   const submitButton = document.getElementById("submit-button");
   submitButton.addEventListener("click", function() {
+    let gender = document.getElementById("gender").value;
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
-    alert("Firstname: "+fname+"\n"+"Lastname: "+lname);
+    let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+    let address = document.getElementById("address").value;
+    let suburb = document.getElementById("suburb").value;
+    let state = document.getElementById("state").value;
+    let postcode = document.getElementById("postcode").value;
+    
+    alert(
+      "Gender: "+gender+"\n"+
+      "Firstname: "+fname+"\n"+
+      "Lastname: "+lname+"\n"+
+      "Username: "+username+"\n"+
+      "Email: "+email+"\n"+
+      "Address: "+address+"\n"+
+      "Suburb: "+suburb+"\n"+
+      "State: "+state+"\n"+
+      "Postcode: "+postcode
+    );
   });
 </script>
 </body>
