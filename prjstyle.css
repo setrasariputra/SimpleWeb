@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("./background1.jpg");
+    background-size: cover;
+  }
+  
+.button {
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 90%;
+    height: 20%;
+    text-align: left;
+    
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    <!-- border: 2px solid #343c39d1; -->
+  }
+  
+  .button1:hover {
+    background-color: rgb(144, 195, 226);
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    <!-- border: 2px solid #343c39d1; -->
+  }
+  
+  .button2:hover {
+    background-color: rgb(144, 195, 226);
+    color: white;
+  }
+
+  .button3 {
+    background-color: white; 
+    color: black; 
+   <!-- border: 2px solid #343c39d1; -->
+  }
+  
+  .button3:hover {
+    background-color: rgb(144, 195, 226);
+    color: white;
+  }
+  
+  .button4 {
+    background-color: white; 
+    color: black; 
+    <!-- border: 2px solid #343c39d1; -->
+  }
+  
+  .button4:hover {
+    background-color: rgb(144, 195, 226);
+    color: white;
+  }
+
+  .button5 {
+    background-color: white; 
+    color: black; 
+    <!-- border: 2px solid #343c39d1; 
+  }
+  
+  .button5:hover {
+    background-color: rgb(144, 195, 226);
+    color: white;
+  }
+
+
+  /* Style the header */
+  .header {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+  }
+  
+  .tagline {
+  font-size: 20px;
+  }
+
+  .sub-header {
+    font-size: 15px;
+    }
+
+  /* Create three unequal columns that float next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Left and right column */
+  .column.left {
+    width: 20%;
+    
+  }
+  
+  /* Middle column */
+  .column.right {
+    width: 80%;
+    background-color: antiquewhite;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #77767b;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: x-small;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+   width: 100%;
+   
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+/*Image Gallery CSS down here*/
+
+  div.gallery {
+    border: 1px solid #7e7070;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: x-small;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /*Sidenav testing*/
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
