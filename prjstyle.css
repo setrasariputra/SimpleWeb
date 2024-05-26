@@ -4,7 +4,7 @@
   
   body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("./background1.jpg");
+    background-image: url("./images/bg.webp");
     background-size: cover;
   }
   
@@ -30,7 +30,7 @@
   .button1 {
     background-color: white; 
     color: black; 
-    <!-- border: 2px solid #343c39d1; -->
+    /* border: 2px solid #343c39d1; */
   }
   
   .button1:hover {
@@ -41,7 +41,7 @@
   .button2 {
     background-color: white; 
     color: black; 
-    <!-- border: 2px solid #343c39d1; -->
+    /* border: 2px solid #343c39d1; */
   }
   
   .button2:hover {
@@ -52,7 +52,7 @@
   .button3 {
     background-color: white; 
     color: black; 
-   <!-- border: 2px solid #343c39d1; -->
+   /* border: 2px solid #343c39d1; */
   }
   
   .button3:hover {
@@ -63,7 +63,7 @@
   .button4 {
     background-color: white; 
     color: black; 
-    <!-- border: 2px solid #343c39d1; -->
+    /* border: 2px solid #343c39d1; */
   }
   
   .button4:hover {
@@ -74,7 +74,7 @@
   .button5 {
     background-color: white; 
     color: black; 
-    <!-- border: 2px solid #343c39d1; 
+    /* border: 2px solid #343c39d1;  */
   }
   
   .button5:hover {
@@ -225,6 +225,16 @@
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+}
+
+.form-registration {
+  background-color: #cccccc;
+  padding: 20px;
+}
+.form-registration .form-box {
+  width: 45%;
+  display:inline-block;
+  background-color: #bbbbbb;
 }
 
 @media screen and (max-height: 450px) {
