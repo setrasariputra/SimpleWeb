@@ -232,9 +232,17 @@
   padding: 20px;
 }
 .form-registration .form-box {
-  width: 45%;
+  width: 100%;
   display:inline-block;
   background-color: #bbbbbb;
+}
+.input-form {
+  width: 300px;
+  padding: 5px;
+}
+.select-form {
+  width: 100px;
+  padding: 5px;
 }
 
 @media screen and (max-height: 450px) {
