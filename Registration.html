@@ -29,6 +29,7 @@
 </div>
   <div class="column right">Content Title<br><br><br>
     <div class="form-registration">
+      <form method="POST">
         <table width="100%" border="0">
           <tr>
             <td>Gender</td>
@@ -43,60 +44,61 @@
           <tr>
             <td width="150px">First Name</td>
             <td>:</td>
-            <td><input type="text" name="fname" class="input-form" /></td>
+            <td><input type="text" name="fname" class="input-form" id="fname" required /></td>
           </tr>
           <tr>
             <td>Last Name</td>
             <td>:</td>
-            <td><input type="text" name="lname" class="input-form"/></td>
+            <td><input type="text" name="lname" class="input-form" id="lname" required/></td>
           </tr>         
           <tr>
             <td>Username</td>
             <td>:</td>
-            <td><input type="text" name="username" class="input-form"/></td>
+            <td><input type="text" name="username" class="input-form" required/></td>
           </tr>
           <tr>
             <td>Email Address</td>
             <td>:</td>
-            <td><input type="email" name="email" class="input-form"/></td>
+            <td><input type="email" name="email" class="input-form" required/></td>
           </tr>
           <tr>
             <td>Phone Number</td>
             <td>:</td>
-            <td><input type="text" name="phone" class="input-form"/></td>
+            <td><input type="text" name="phone" class="input-form" required/></td>
           </tr>
           <tr>
             <td>Password</td>
             <td>:</td>
-            <td><input type="password" name="password" class="input-form"/></td>
+            <td><input type="password" name="password" class="input-form" required/></td>
           </tr> 
           <tr>
             <td>Confirm Password</td>
             <td>:</td>
-            <td><input type="password" name="cpassword" class="input-form"/></td>
+            <td><input type="password" name="cpassword" class="input-form" required/></td>
           </tr>          
           <tr>
             <td>Address</td>
             <td>:</td>
-            <td><textarea name="address" class="input-form"></textarea></td>
+            <td><textarea name="address" class="input-form" required></textarea></td>
           </tr>    
           <tr>
             <td>Suburb</td>
             <td>:</td>
-            <td><input type="text" name="suburb" class="input-form"/></td>
+            <td><input type="text" name="suburb" class="input-form" required/></td>
           </tr> 
           <tr>
             <td>State</td>
             <td>:</td>
-            <td><input type="text" name="state" class="input-form"/></td>
+            <td><input type="text" name="state" class="input-form" required/></td>
           </tr>
           <tr>
             <td>Postcode</td>
             <td>:</td>
-            <td><input type="text" name="postcode" class="input-form"/></td>
+            <td><input type="text" name="postcode" class="input-form" required/></td>
           </tr>                                                                                              
         </table>
-      </div>
+        <input type="submit" value="Submit Data" class="button-form" id="submit-button" />
+      </form>
     </div>
 </div>
   
@@ -107,7 +109,16 @@
       <br>
       © 2016 - 2024, Trademark and copyrights reserved.
     </p>
+</div>
 
+<script>
+  const submitButton = document.getElementById("submit-button");
+  submitButton.addEventListener("click", function() {
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    alert("Firstname: "+fname+"\n"+"Lastname: "+lname);
+  });
+</script>
 </body>
 </html>
 

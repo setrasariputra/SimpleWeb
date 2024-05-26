@@ -103,7 +103,7 @@
   .column {
     float: left;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    /* height: 300px; Should be removed. Only for demonstration */
   }
   
   /* Left and right column */
@@ -243,6 +243,10 @@
 .select-form {
   width: 100px;
   padding: 5px;
+}
+.button-form {
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
 }
 
 @media screen and (max-height: 450px) {
