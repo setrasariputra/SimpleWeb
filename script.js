@@ -1,7 +1,9 @@
 const submitButton = document.getElementById("submit-button");
 const resetButton = document.getElementById("reset-button");
 
+  // submit button click 
   submitButton.addEventListener("click", function() {
+    // init var
     let gender = document.getElementById("gender").value;
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
@@ -15,7 +17,7 @@ const resetButton = document.getElementById("reset-button");
     let state = document.getElementById("state").value;
     let postcode = document.getElementById("postcode").value;
     
-    // alert(password.length);
+    // start validation data
     if(password != cpassword) {
         alert("password & confirm password not match!")
     }else
@@ -33,6 +35,7 @@ const resetButton = document.getElementById("reset-button");
     postcode == '') {
         alert("Please fill empty field!")
     }else{
+      // success valid data
         alert(
         "Gender: "+gender+"\n"+
         "Firstname: "+fname+"\n"+
@@ -48,6 +51,7 @@ const resetButton = document.getElementById("reset-button");
     }
   });
 
+  // reset button click
   resetButton.addEventListener("click", function() {
     document.getElementById("gender").value = '';
     document.getElementById("fname").value = '';
