@@ -1,4 +1,6 @@
 const submitButton = document.getElementById("submit-button");
+const resetButton = document.getElementById("reset-button");
+
   submitButton.addEventListener("click", function() {
     let gender = document.getElementById("gender").value;
     let fname = document.getElementById("fname").value;
@@ -13,8 +15,12 @@ const submitButton = document.getElementById("submit-button");
     let state = document.getElementById("state").value;
     let postcode = document.getElementById("postcode").value;
     
+    // alert(password.length);
     if(password != cpassword) {
         alert("password & confirm password not match!")
+    }else
+    if(password.length != 8) {
+      alert("password length must be 8 char!")
     }else
     if(gender == '' || 
     fname == '' || 
@@ -40,4 +46,19 @@ const submitButton = document.getElementById("submit-button");
         "Postcode: "+postcode
         );
     }
+  });
+
+  resetButton.addEventListener("click", function() {
+    document.getElementById("gender").value = '';
+    document.getElementById("fname").value = '';
+    document.getElementById("lname").value = '';
+    document.getElementById("username").value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("phone").value = '';
+    document.getElementById("password").value = '';
+    document.getElementById("cpassword").value = '';
+    document.getElementById("address").value = '';
+    document.getElementById("suburb").value = '';
+    document.getElementById("state").value = '';
+    document.getElementById("postcode").value = '';
   });

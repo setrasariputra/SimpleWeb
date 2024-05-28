@@ -1,118 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Registration</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="prjstyle.css">
+<head>
+  <title>Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="prjstyle.css">
 
 </head>
+
 <body>
 
-    <div class="header">
-        <h2>BE-You Academy</h2>
-        <div class="tagline">People. Productivity. Profitabilty.</div>
-        <br>
-        <div class="sub-header"><p>Registration</p></div>
-      
-      </div>
-
-<div class="row">
-
-  <div class="column left">
-    <br><button class="button button1"><a href="index.html">Homepage</button></a>
-    <br><button class="button button2"><a href="InteractivePage1.html">Interactive Page 1</button></a>
-    <br><button class="button button3"><a href="InteractivePage2.html">Interactive Page 2</button></a>
-    <br><button class="button button4"><a href="ImageGallery.html">Image Gallery</button></a>
-    <br><button class="button button5"><a href="Registration.html">Registration</button></a>
-</div>
-  <div class="column right">Content Title<br><br><br>
-    <div class="form-registration">
-      <form method="POST">
-        <table width="100%" border="0">
-          <tr>
-            <td>Gender</td>
-            <td>:</td>
-            <td>
-              <select class="select-form" name="gender" id="gender">
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-              </select>
-            </td>
-          </tr>           
-          <tr>
-            <td width="150px">First Name</td>
-            <td>:</td>
-            <td><input type="text" name="fname" class="input-form" id="fname" required /></td>
-          </tr>
-          <tr>
-            <td>Last Name</td>
-            <td>:</td>
-            <td><input type="text" name="lname" class="input-form" id="lname" required/></td>
-          </tr>         
-          <tr>
-            <td>Username</td>
-            <td>:</td>
-            <td><input type="text" name="username" class="input-form" id="username" required/></td>
-          </tr>
-          <tr>
-            <td>Email Address</td>
-            <td>:</td>
-            <td><input type="email" name="email" class="input-form" id="email" required/></td>
-          </tr>
-          <tr>
-            <td>Phone Number</td>
-            <td>:</td>
-            <td><input type="text" name="phone" class="input-form" id="phone" required/></td>
-          </tr>
-          <tr>
-            <td>Password</td>
-            <td>:</td>
-            <td><input type="password" name="password" class="input-form" id="password" required/></td>
-          </tr> 
-          <tr>
-            <td>Confirm Password</td>
-            <td>:</td>
-            <td><input type="password" name="cpassword" class="input-form" id="cpassword" required/></td>
-          </tr>          
-          <tr>
-            <td>Address</td>
-            <td>:</td>
-            <td><textarea name="address" class="input-form" id="address" required></textarea></td>
-          </tr>    
-          <tr>
-            <td>Suburb</td>
-            <td>:</td>
-            <td><input type="text" name="suburb" class="input-form" id="suburb" required/></td>
-          </tr> 
-          <tr>
-            <td>State</td>
-            <td>:</td>
-            <td><input type="text" name="state" class="input-form" id="state" required/></td>
-          </tr>
-          <tr>
-            <td>Postcode</td>
-            <td>:</td>
-            <td><input type="text" name="postcode" class="input-form" id="postcode" required/></td>
-          </tr>                                                                                              
-        </table>
-        <input type="submit" value="Submit Data" class="button-form" id="submit-button" />
-      </form>
+  <div class="header">
+    <h2>BE-You Academy</h2>
+    <div class="tagline">People. Productivity. Profitabilty.</div>
+    <br>
+    <div class="sub-header">
+      <p>Registration</p>
     </div>
-</div>
-  
-</div>
 
-<div class="footer">
+  </div>
+
+  <div class="row">
+
+    <div class="column left">
+      <button class="button button1" onclick="window.open('index.html',
+    '_self')">Homepage</button><br>
+      <button class="button button2" onclick="window.open('InteractivePage1.html',
+      '_self')">InteractivePage1</button><br>
+      <button class="button button3" onclick="window.open('InteractivePage2.html',
+        '_self')">InteractivePage2</button><br>
+      <button class="button button4" onclick="window.open('ImageGallery.html',
+          '_self')">Image Gallery</button><br>
+      <button class="button buttonclick" onclick="window.open('Registration.html',
+            '_self')">Registration</button>
+    </div>
+    <div class="column right">#Content Title<br><br><br>
+      <div class="form-registration">
+        <form method="POST">
+          <label>Gender: </label>
+          <select class="select-form" name="gender" id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select><br><br>
+          <label>First Name: </label><input type="text" id="fname"><br><br>
+          <label>Last Name: </label><input type="text" id="lname"><br><br>
+          <label>Username: </label><input type="text" id="username"><br><br>
+                <label>Email Address: </label><input type="email" id="email"><br><br>
+                <label>Phone Number: </label><input type="number" id="phone"><br><br>
+                <label>Password: </label><input type="password" id="password"><br><br>
+                <label>Confirm Password: </label><input type="password" id="cpassword"><br><br>
+                <label>Address: </label><textarea id="address" required></textarea> <br><br>
+                <label>Suburb:</label><input type="text" name="suburb" class="input-form" id="suburb" required />
+                <label for="state">State:</label>
+              <select name="state" id="state">
+                <option value="">Select...</option>
+                <option value="ACT">ACT</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="WA">WA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+                <option value="SA">SA</option>
+                <option value="NT">NT</option>
+              </select><br /><br />
+              <label>Postcode:</label><input type="text" name="postcode" class="input-form" id="postcode" required />       
+          <input type="submit" value="Submit Data" class="button-form" id="submit-button" />
+          <input type="button" value="Reset Data" class="button-form" id="reset-button" />
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
     <p>BE-You Academy
       <br>
       © 2016 - 2024, Trademark and copyrights reserved.
     </p>
-</div>
+  </div>
 
-<script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
-
-
