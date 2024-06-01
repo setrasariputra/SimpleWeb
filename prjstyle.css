@@ -298,3 +298,16 @@ text-align: center;
 
 /*Interactive Page 2 below*/
 
+
+.logo {
+  margin:auto;
+  width: 200px;
+  height: 40px;
+  background-image: url('Images/Image1-Logo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
