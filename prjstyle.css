@@ -4,8 +4,9 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-image: url("Images/background1.jpg");
+  background-image: url("Images/Image5-Background-Image.jpg");
   background-size: cover;
+  line-height: 1.5em;
 }
 
 .button {
@@ -13,7 +14,6 @@ body {
   border-radius: 8px;
   color: white;
   padding: 16px 20px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
@@ -34,6 +34,31 @@ body {
   color: black; 
   /* border: 2px solid #343c39d1; */
 }
+
+.button-form {
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    background-color: rgb(196, 169, 141);
+    color: black; 
+  }
+
+  .button-form:hover {
+    background-color: rgb(144, 195, 226);
+    color: white;
+  }
+  
 
 .button:hover {
   background-color: rgb(144, 195, 226);
@@ -75,6 +100,7 @@ font-size: 20px;
   width: 80%;
   background-color: antiquewhite;
   margin-bottom: 100px;
+  line-height: 1.5em;
 }
 
 /* Clear floats after the columns */
@@ -216,6 +242,8 @@ background: #f1f1f1;
 input[type=text]:focus, input[type=email]:focus, input[type=email]:focus, input[type=password]:focus {
 background-color: #ddd;
 outline: none;
+margin: 5px 0 22px 0;
+
 }
 textarea {
   width: 100%;
@@ -267,3 +295,6 @@ color: dodgerblue;
 background-color: #f1f1f1;
 text-align: center;
 }
+
+/*Interactive Page 2 below*/
+

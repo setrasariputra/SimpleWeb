@@ -21,19 +21,68 @@
 <div class="row">
 
   <div class="column left">
-    <br><button class="button button1"><a href="index.html">Homepage</button></a>
-    <br><button class="button button2"><a href="InteractivePage1.html">Interactive Page 1</button></a>
-    <br><button class="button button3"><a href="InteractivePage2.html">Interactive Page 2</button></a>
-    <br><button class="button button4"><a href="ImageGallery.html">Image Gallery</button></a>
-    <br><button class="button button5"><a href="Registration.html">Registration</button></a>
-</div>
-  <div class="column right">Content Title<br><br><br>
-    <p>
-        Text
-    </p>
+    <button class="button" onclick="window.open('index.html',
+    '_self')">Homepage</button><br>
+        <button class="button" onclick="window.open('InteractivePage1.html',
+      '_self')">InteractivePage1</button><br>
+        <button class="button buttonclick" onclick="window.open('InteractivePage2.html',
+        '_self')">InteractivePage2</button><br>
+        <button class="button" onclick="window.open('ImageGallery.html',
+          '_self')">Image Gallery</button><br>
+        <button class="button" onclick="window.open('Registration.html',
+            '_self')">Registration</button><br></div>
+
+  <div class="column right">
+
+    <h2>Fact of The Day!</h2>
+    <br>
+
+    <p id="demo"></p>
+    
+    <script>
+    let day;
+    switch (new Date().getDay()) {
+      case 0:
+        day = "Sunday";
+        img = "<img src='Images/nature.webp' />";
+        fact = "<b>Honeybees Recognize Human Faces:</b> <br>In a testament to the incredible cognitive abilities of honeybees, studies have shown that these industrious insects can recognize and remember human faces. While not a common party trick, it showcases the intricate social structure and communication within bee colonies.";
+        break;
+      case 1:
+        day = "Monday";
+        img = "<img src='Images/nature.webp' />";
+        fact = "<b>The Inventor of the Frisbee Was Turned into a Frisbee:</b> <br>Walter Morrison, the inventor of the Frisbee, expressed a quirky wish in his will – to have his ashes turned into a Frisbee. True to his request, his ashes were incorporated into a limited edition series of Frisbees, allowing him to soar through the skies even after his passing.";
+        break;
+      case 2:
+        day = "Tuesday";
+        img = "<img src='Images/nature.webp' />";
+        fact = "<b>The Ears of a Cricket Are Located on Its Front Legs:</b> <br>The seemingly delicate chirping of crickets is orchestrated by structures called tympana, which are located on the front legs of these tiny insects. This unique auditory arrangement helps crickets communicate and navigate their surroundings through sound vibrations.";
+        break;
+      case 3:
+        day = "Wednesday";
+        img = "<img src='Images/nature.webp' />";
+        fact = "<b>The longest word in the English language is the chemical name for the protein known as Titin.</b> <br>Brace yourself: the full name is 189,819 letters long. For the sake of simplicity, it’s often abbreviated, but it holds the Guinness World Record for the lengthiest word.";
+        break;
+      case 4:
+        day = "Thursday";
+        img = "<img src='Images/nature.webp' />";
+        fact = "<b>A Group of Flamingos is Called a “Flamboyance”:</b> <br>When it comes to collective nouns, few are as fitting and colorful as the term “flamboyance” to describe a group of flamingos. These vibrant birds, known for their distinctive pink hue, create a visually stunning display when gathered together.";
+        break;
+      case 5:
+        day = "Friday";
+        img = "<img src='Images/nature.webp' />";
+        fact = "<b>The First Recorded Recipe is Over 4,000 Years Old:</b> <br>Dating back to ancient Sumeria, the world’s oldest recorded recipe is for a hearty beer. Found on a clay tablet, the recipe outlines the process of brewing beer using ingredients such as barley, honey, and emmer wheat.";
+        break;
+      case 6:
+        day = "Saturday";
+        img = "<img src='Images/nature.webp' />";
+        fact = "<b>The Longest English Word Without a Vowel is “Rhythms”:</b> <br>In the English language, the word “rhythms” stands out as the longest word without a vowel. Despite its seemingly complex arrangement of consonants, it flows rhythmically off the tongue.";
+    }
+    document.getElementById("demo").innerHTML = "Here is a fun fact for " + day + ":" + "<br>"+ img +"<br>" +fact;
+    </script>
+  
+    
 </div>
   
-</div>
 
 <div class="footer">
     <p>BE-You Academy

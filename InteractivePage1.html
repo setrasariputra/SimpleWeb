@@ -21,21 +21,48 @@
 <div class="row">
 
   <div class="column left">
-    <br><button class="button button1"><a href="index.html">Homepage</button></a>
-    <br><button class="button button2"><a href="InteractivePage1.html">Interactive Page 1</button></a>
-    <br><button class="button button3"><a href="InteractivePage2.html">Interactive Page 2</button></a>
-    <br><button class="button button4"><a href="ImageGallery.html">Image Gallery</button></a>
-    <br><button class="button button5"><a href="Registration.html">Registration</button></a>
-</div>
-  <div class="column right">Content Title<br><br><br>
+    <button class="button" onclick="window.open('index.html',
+    '_self')">Homepage</button><br>
+        <button class="button buttonclick" onclick="window.open('InteractivePage1.html',
+      '_self')">InteractivePage1</button><br>
+        <button class="button" onclick="window.open('InteractivePage2.html',
+        '_self')">InteractivePage2</button><br>
+        <button class="button" onclick="window.open('ImageGallery.html',
+          '_self')">Image Gallery</button><br>
+        <button class="button" onclick="window.open('Registration.html',
+            '_self')">Registration</button><br>
+            </div>
+  <div class="column right">Healthy Recipes<br><br><br>
+
+    <h2 id="recipe-title">Check Out Our Award-Winning Recipes</h2>
+    <p id="recipe-details">Select on one of the options below:</p>
+    <div id="y-video"></div>
 
 
+    <button type="button" class="button-form" onclick="myFunction1()">Recipe 1</button>
+    <button type="button2" class="button-form" onclick="myFunction2()">Recipe 2</button>
+    <button type="button3" class="button-form" onclick="myFunction3()">Recipe 3</button>
+    
+    
+    <script>
+    function myFunction1() {
+      document.getElementById("recipe-title").innerHTML = "Recipe Title1";
+      document.getElementById("recipe-details").innerHTML = "Recipe Lasagna";
+      document.getElementById("y-video").innerHTML = "<iframe width='700' height='400' src='https://www.youtube.com/embed/LzrN5HReVvI' title='Resep Soto Ayam Mudah dan Enak' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";
+    }
+    function myFunction2() {
+      document.getElementById("recipe-title").innerHTML = "Recipe Title2";
+      document.getElementById("recipe-details").innerHTML = "Recipe Meatballs";
+      document.getElementById("y-video").innerHTML = '<iframe width="700" height="400" src="https://www.youtube.com/embed/oPS4WE4szfw" title="RESEP SOTO MIE BOGOR BENING  YANG ENAK ALA RUMAHAN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
 
-    <p>
-        Text
-    </p>
-</div>
-  
+    }
+    function myFunction3() {
+      document.getElementById("recipe-title").innerHTML = "Recipe Title3";
+      document.getElementById("recipe-details").innerHTML = "Recipe Spaghetti";
+      document.getElementById("y-video").innerHTML = '<iframe width="700" height="400" src="https://www.youtube.com/embed/YkZpAQ0AR0c" title="Resep Soto Betawi Temennya Haji Mamat, Kuahnya Spesial Gurih Wangi dan Ada Tips Anti Gagal !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+
+    }
+    </script>
 </div>
 
 <div class="footer">
