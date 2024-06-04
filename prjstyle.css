@@ -158,7 +158,8 @@ div.desc {
 
 .responsive {
   padding: 0 6px;
-  float: left;
+  /* float: left; */
+  display: inline-block;
   width: 24.99999%;
 }
 
@@ -355,3 +356,7 @@ text-align: center;
   -ms-transform: translate(-50%, -50%);
 }
 /* End Box Image */
+
+.img-gallery {
+  text-align: center;
+}
