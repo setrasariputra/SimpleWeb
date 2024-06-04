@@ -18,12 +18,14 @@ const resetButton = document.getElementById("reset-button");
     let postcode = document.getElementById("postcode").value;
     
     // start validation data
-    if(password != cpassword) {
-        alert("password & confirm password not match!")
-    }else
-    if(password.length != 8) {
-      alert("password length must be 8 char!")
-    }else
+    if(password != '' && cpassword != '') {
+      if(password != cpassword) {
+          alert("password & confirm password not match!")
+      }else
+      if(password.length != 8) {
+        alert("password length must be 8 char!")
+      }
+    }
     if(gender == '' || 
     fname == '' || 
     lname == '' || 
