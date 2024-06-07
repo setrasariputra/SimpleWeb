@@ -18,37 +18,39 @@ const resetButton = document.getElementById("reset-button");
     let postcode = document.getElementById("postcode").value;
     
     // start validation data
-    if(password != '' && cpassword != '') {
-      if(password != cpassword) {
-          alert("password & confirm password not match!")
-      }else
-      if(password.length != 8) {
-        alert("password length must be 8 char!")
+    if (password != '' && cpassword != '') {
+      if (password != cpassword) {
+          alert("Password & confirm password do not match!");
+      } else if (password.length != 8) {
+          alert("Password length must be 8 characters!");
       }
     }
-    if(gender == '' || 
-    fname == '' || 
-    lname == '' || 
-    username == '' ||
-    email == '' ||
-    address == '' ||
-    suburb == '' ||
-    state == '' ||
-    postcode == '') {
-        alert("Please fill empty field!")
-    }else{
-      // success valid data
+    
+    if (gender == '' || 
+        fname == '' || 
+        lname == '' || 
+        username == '' ||
+        email == '' ||
+        address == '' ||
+        suburb == '' ||
+        state == '' ||
+        postcode == '') {
+        alert("Please fill in the empty fields!");
+    } else if (password == '' || cpassword == '') {
+        alert("Please enter the password and confirm password!");
+    } else if (password == cpassword && password.length == 8) {
+        // success valid data
         alert(
-        "Gender: "+gender+"\n"+
-        "Firstname: "+fname+"\n"+
-        "Lastname: "+lname+"\n"+
-        "Username: "+username+"\n"+
-        "Email: "+email+"\n"+
-        "Phone: "+phone+"\n"+
-        "Address: "+address+"\n"+
-        "Suburb: "+suburb+"\n"+
-        "State: "+state+"\n"+
-        "Postcode: "+postcode
+            "Gender: " + gender + "\n" +
+            "Firstname: " + fname + "\n" +
+            "Lastname: " + lname + "\n" +
+            "Username: " + username + "\n" +
+            "Email: " + email + "\n" +
+            "Phone: " + phone + "\n" +
+            "Address: " + address + "\n" +
+            "Suburb: " + suburb + "\n" +
+            "State: " + state + "\n" +
+            "Postcode: " + postcode
         );
     }
   });
